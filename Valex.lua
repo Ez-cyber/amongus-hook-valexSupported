@@ -6,17 +6,17 @@ local statuslist = {};
 statuslist.fallensurvival = {
 	name 		= 'Fallen Survival';
 	status 		= 'Undetected';
-	support 	= {'Zenith'; 'Swift'; 'Wave'; 'Potassium_'; 'Volcano_'; 'Valex_'; };
+	support 	= {'Zenith'; 'Swift'; 'Wave'; 'Potassium_'; 'Volcano_'; 'valex_'; };
 };
 statuslist.tridentsurvival = {
 	name 		= 'Trident Survival';
 	status 		= 'Undetected';
-	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'Valex'; };
+	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'valex'; };
 };
 statuslist.lonesurvival = {
 	name 		= 'Lone Survival';
 	status      = 'Undetected';
-	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'Valex'; };
+	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'valex'; };
 };
 
 local players 		= game:GetService('Players');
@@ -98,3 +98,4 @@ elseif (placeid == 13800223141 or placeid == 139307005148921) then
 	return load('lonesurvival');
 end;
 protectedMessagebox(`This Game is Unsupported!\n\nIf you believe this is incorrect, please open a ticket in our discord! - discord.gg/2jycAcKvdw`, `amongus.hook [{placeid}]`, 48);
+
