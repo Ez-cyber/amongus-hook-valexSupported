@@ -11,12 +11,12 @@ statuslist.fallensurvival = {
 statuslist.tridentsurvival = {
 	name 		= 'Trident Survival';
 	status 		= 'Undetected';
-	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'Valex_'; };
+	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'Valex'; };
 };
 statuslist.lonesurvival = {
 	name 		= 'Lone Survival';
 	status      = 'Undetected';
-	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'Valex_'; };
+	support 	= {'Wave'; 'Zenith'; 'MacSploit'; 'Velocity'; 'Potassium'; 'Seliware'; 'Swift'; 'Volcano'; 'Valex'; };
 };
 
 local players 		= game:GetService('Players');
@@ -83,7 +83,6 @@ local load = function(name)
 	elseif (
 		game.support and 
 		not table.find(game.support, executor) and 
-		protectedMessagebox(`Unsupported Executor!\n\n{executor} is not Officially Supported for {game.name}\nWARNING Valex May RESULT in BAN!\n\nAre You Sure You Want to Continue?`, `amongus.hook [{executor}]`, 52) ~= 6)
 		protectedMessagebox(`Unsupported Executor!\n\n{executor} is not Officially Supported for {game.name}\nand may have Undefined Behaviour or even result in a BAN!\n\nAre You Sure You Want to Continue?`, `amongus.hook [{executor}]`, 52) ~= 6
 	) then
 		return;
